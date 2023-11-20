@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date and Time Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+      float: left;
+    }
+
+    #dateTime {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #currentTime {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    #currentDate {
+      font-size: 18px;
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="dateTime"></div>
+<div id="currentTime"></div>
+<div id="currentDate"></div>
+
+<script>
+  function updateDateTime() {
+    const now = new Date();
+
+    // Display full date and time
+    const dateTimeElement = document.getElementById('dateTime');
+    dateTimeElement.textContent = now.toString();
+
+    // Display current time
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const currentTimeElement = document.getElementById('currentTime');
+    currentTimeElement.innerHTML = `<strong>Now:</strong> ${hours}:${minutes}:${seconds}`;
+
+    // Display formatted current date
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    const dayOfWeek = daysOfWeek[now.getDay()];
+    const month = months[now.getMonth()];
+    const day = now.getDate();
+    const year = now.getFullYear();
+
+    const currentDateElement = document.getElementById('currentDate');
+    currentDateElement.innerHTML = `<strong style="color: blue;">Today:</strong> ${dayOfWeek}, ${month} ${getOrdinalSuffix(day)}, ${year}`;
+  }
+
+  function getOrdinalSuffix(day) {
+    if (day >= 11 && day <= 13) {
+      return `${day}th`;
+    }
+
+    const suffixes = ['th', 'st', 'nd', 'rd'];
+    const v = day % 10;
+    return `${day}${suffixes[v] || 'th'}`;
+  }
+
+  // Update the date and time every second
+  setInterval(updateDateTime, 1000);
+
+  // Initial update
+  updateDateTime();
+</script>
+
+</body>
+</html>

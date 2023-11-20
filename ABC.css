@@ -1,0 +1,163 @@
+*{
+    margin:0px;
+    padding: 0px;
+    }
+    body {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        background-image: url(back1.jpg);
+        box-shadow: inset;
+    
+    }
+    article{
+        display: table-row;
+    }
+    
+    
+   
+.header1 {
+    float: left;
+
+}
+
+.logo {
+color: darkblue;
+float: right;
+padding-top: 150px;
+padding-right: 30px;
+font-weight: bold;
+
+}
+
+
+   aside#left, aside#right, section{
+        display: table-cell;
+        vertical-align: top;
+        width: 1000px;
+
+        border-color: white;
+        }
+
+img { 
+    border: none; 
+    vertical-align: top;
+    }
+
+
+nav ul {
+    clear: both;
+}
+nav a{
+    color: red;
+
+
+
+}
+.nav{
+    width: 100%;
+}
+nav  ul li,label {
+    display: block;
+    background:lightgreen;
+   
+    
+    border-bottom: 10px solid  white;
+}
+
+nav ul li ,label{
+    border-right: solid 20px white;
+    display: table-cell;
+    padding: 0 20px;
+}
+
+nav  ul li{
+    content:normal;
+    border-right: 2px solid black ;
+    padding-right: 0;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius: 1px;
+    
+    
+}
+
+nav input{
+    border-right: none;
+    text-decoration:none;
+    border-radius: 1px;
+}
+nav ul li a:hover {
+    color: yellow;
+}
+nav ul li.last {
+
+    border-right: none;
+    padding-right: none;
+    border-color: white;
+    
+}
+
+.aside_left{
+    height: fit-content;
+    
+    
+    float:left;
+    background-color: lightgray;
+    border-right: 20px solid white;
+    width: 250px;
+    padding-left: 20px;
+    
+   
+}
+.aside_right{
+    border-radius: 10px solid white;
+    width: 30%px;
+    height:auto;
+    background-color: lightgray;
+    
+    border-right: 20px solid white;
+    float:right
+}
+
+.title{
+    padding-left: 40px;
+    background-color: blue;
+    color: white;
+    border-right: 20px solid white;
+    text-decoration: none;
+    
+}
+
+.product-box{
+    
+    background-color: lightblue;
+    width: 235px;
+    height: 370px;
+}
+.namebook{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size:large;
+    color: darkblue;
+
+}
+.photo{
+    padding-left: 30px;
+}
+
+.bill{
+    font-weight: bold;
+    padding-left: 40px;
+}
+.price{
+    color: red;
+}
+.buttonbuy{
+    padding-left: 40px;
+}
+section{
+    table-layout: 3;
+    width: 100%;
+    height: 10%;
+}

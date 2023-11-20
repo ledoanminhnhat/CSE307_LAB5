@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ABC BookStore</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Style.css">
+        
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+        
+        <header>
+            
+            <div class="headerimage" >
+                <img src="logoABCbook.png" class="img" alt="ABC BookStore Logo"
+                    style="width: 250px; height: 150px;">
+                <div class="headerlogo">
+                    <i class="fa fa-user-circle-o" aria-hidden="true">
+                        <a href="registration.html" style="color: blue;"><u>Log
+                                in</u> | <u>Registration</u></a>
+                    </i>
+                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                        <a href="cart.html" style="color: blue;"><u>Cart</u></a>
+                    </i>
+                
+                
+
+            </div>
+            
+
+        </header>
+        
+
+
+        <nav >
+            <ul class="nav_line" class="clearfix" class="btn-group" >
+                <li><a class="btn btn-success" class="btn btn-secondary">HOMEPAGE</a></a></li>
+                <li><button class="btn btn-success" class="btn btn-secondary">INTRODUCTION</button></a></li>
+                <li><button  class="btn btn-success" class="btn btn-secondary">CONTACT</button></a></li>
+                <li>
+                    <a class="btn btn-success dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BOOKS BY SUBJECT
+                      </a>
+                      <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                      </ul></a></li>
+                <li>
+                    
+                <li>
+                    <a class="btn btn-success dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BOOKS BY PUBLISHERS
+                      </a>
+                      <ul class="dropdown-menu">
+                    <a class="dropend-item" href="#">Dropdown link</a>
+                    <a class="dropend-item" href="#">Dropdown link</a>
+                      </ul></a></li>
+                <li>
+                    
+                 
+
+                <label>
+                    <input  type="text" name="Search" placeholder="Enter the title of the books">
+                    <button class="btn btn-success" type="submit">Find books</button>
+                </label>
+            </ul>
+
+        </nav>
+
+     
+            <article>
+                <aside>
+                    <h2 class="title"  >Books by Category</h2>
+                    <ul class="aside_left">
+                        <li type="square"><a href="Ngoại Ngữ">Ngoại Ngữ</a></li>
+                        <li type="square"><a href="Công nghệ thông tin">Công
+                                nghệ thông tin</a></li>
+                        <li type="square"><a href="Luật">Luật</a></li>
+                        <li type="square"><a href="Văn học">Văn học</a></li>
+                        <li type="square"><a href="Khoa học kĩ thuật">Khoa
+                                học kĩ thuật</a></li>
+                        <li type="square"><a href="Nông nghiệp">Nông
+                                nghiệp</a></li>
+                        <li type="square"><a href="Lịch sử địa lý">Lịch
+                                sử
+                                địa lý</a></li>
+                        <li type="square"><a href="Kinh tế">Kinh tế</a></li>
+                        <li type="square"><a href="Nghệ thuật sống">Nghệ
+                                thuật sống</a></li>
+                    </ul>
+                    
+.
+                    <h2 class="title">Books by Publisher</h2>
+                    <ul class="aside_left">
+                        <li><a href="publisher/nha-xuat-ban-tre.html">Nhà Xuất
+                                Bản Trẻ</a></li>
+                        <li><a href="publisher/nxb-thong-ke.html">NXB Thống Kê</a></li>
+                        <li><a href="publisher/kim-dong.html">Kim Đồng</a></li>
+                        <li><a href="publisher/dai-hoc-quoc-gia.html">Đại Học
+                                Quốc Gia</a></li>
+                        <li><a href="publisher/van-hoa-nghe-thuat.html">Văn Hóa
+                                Nghệ Thuật</a></li>
+                        <li><a href="publisher/van-hoa.html">Văn Hóa</a></li>
+                        <li><a href="publisher/lao-dong-xa-hoi.html">Lao Động -
+                                Xã Hội</a></li>
+                        <li><a href="publisher/khoa-hoc-ky-thuat.html">Khoa Học
+                                & Kỹ Thuật</a></li>
+                    </ul>
+                </aside>
+
+                <section>
+                    <!-- book1 -->
+                    <div  class="product-box">
+                        <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>Giáo
+                                trình Tin học cơ bản
+                            </a></p>
+                        <img class="photo" style="height: 260px; width: 160px;" src="windowxp.jpg"
+                            alt="Informatic-Book">
+                        <p class="bill">Đơn giá: <span class="price">126,000 VNĐ</span></p>
+                        <a href="#"><img style="height: 50px;width: 150px;"
+                                src="đặt mua buttoon.jpg" class="buttonbuy"
+                                alt="#"></a>
+                    </div>
+                    
+                    <!-- book2 -->
+                    
+                        <div class="product-box">
+                            <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>English For Tech
+                                </a></p>
+                            <img class="photo" style="height: 260px; width: 160px;" src="EnglishForTech.jpg"
+                                alt="Informatic-Book">
+                            <p class="bill">Đơn giá: <span class="price">206,000 VNĐ</span></p>
+                            <a href="#"><img style="height: 50px;width: 150px;"
+                                    src="đặt mua buttoon.jpg" class="buttonbuy"
+                                    alt="#"></a>
+                        </div>
+                       
+                        <!-- book3 -->
+                        <div class="product-box">
+                            <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>BARC Computer Science
+                                </a></p>
+                            <img class="photo" style="height: 260px; width: 160px;" src="BARC.png"
+                                alt="Informatic-Book">
+                            <p class="bill">Đơn giá: <span class="price">260,000 VNĐ</span></p>
+                            <a href="#"><img style="height: 50px;width: 150px;"
+                                    src="đặt mua buttoon.jpg" class="buttonbuy"
+                                    alt="#"></a>
+                        </div>
+                        
+                        <!-- book4 -->
+                        <div class="product-box">
+                            <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>The Davinci Code
+                                </a></p>
+                            <img class="photo" style="height: 260px; width: 160px;" src="Davinci.png"
+                                alt="Informatic-Book">
+                            <p class="bill">Đơn giá: <span class="price">265,000 VNĐ</span></p>
+                            <a href="#"><img style="height: 50px;width: 150px;"
+                                    src="đặt mua buttoon.jpg" class="buttonbuy"
+                                    alt="#"></a>
+                        </div>
+                        
+                        <!-- book5 -->
+                        <div class="product-box">
+                            <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>Harry Potter
+                                </a></p>
+                            <img class="photo" style="height: 260px; width: 160px;" src="harrypotter.png"
+                                alt="Informatic-Book">
+                            <p class="bill">Đơn giá: <span class="price">267,000 VNĐ</span></p>
+                            <a href="#"><img style="height: 50px;width: 150px;"
+                                    src="đặt mua buttoon.jpg" class="buttonbuy"
+                                    alt="#"></a>
+                        </div>
+                        
+                        <!-- book6 -->
+                        <div class="product-box">
+                            <p class="namebook"> <a class="namebook" style="font-weight: bold;" href>Visual Basic
+                                </a></p>
+                            <img class="photo" style="height: 260px; width: 160px;" src="VisualBasic.png"
+                                alt="Informatic-Book">
+                            <p class="bill">Đơn giá: <span class="price">120,000 VNĐ</span></p>
+                            <a href="#"><img style="height: 50px;width: 150px;"
+                                    src="đặt mua buttoon.jpg" class="buttonbuy"
+                                    alt="#"></a>
+                        </div>
+                        
+                   
+                    
+                    
+                    
+                    
+
+
+                </section>
+
+                <aside>
+                    <h1  class="right_title">BESTSELLER</h1>
+                    <div class="aside_right">
+                        <marquee direction="up" scrollamount="3"
+                            scrolldelay="100"
+                            onMouseMove="stop()" onMouseOut="start()">
+                            <p><a href="#"><img
+                                        style="width: 200px;height: 400px;"
+                                        src="EnglishForTech.jpg"> English For
+                                    Tech</a></p>
+                        </marquee>
+
+                        <marquee direction="up" scrollamount="3"
+                            scrolldelay="100"
+                            onMouseMove="stop()" onMouseOut="start()">
+                            <p><a href="#"><img
+                                        style="width: 200px;height: 400px;"
+                                        src="BARC.png"> BARC Computer Science</a></p>
+                        </marquee>
+                        <marquee direction="up" scrollamount="3"
+                            scrolldelay="100"
+                            onMouseMove="stop()" onMouseOut="start()">
+                            <p><a href="#"><img
+                                        style="width: 200px;height: 400px;"
+                                        src="harrypotter.png"> Harrypotter</a></p>
+                        </marquee>
+                        <marquee direction="up" scrollamount="3"
+                            scrolldelay="100"
+                            onMouseMove="stop()" onMouseOut="start()">
+                            <p><a href="#"><img
+                                        style="width: 200px;height: 400px;"
+                                        src="VisualBasic.png"> VisualBasic</a></p>
+                        </marquee>
+
+                    </div>
+                    
+                    
+                    
+
+                    <div class="aside_right">
+                        <h1 class="right_title" >THE WEBSITE LINKS</h1>
+                    <p class="select" class="aside_right"><select   name="chọn"
+                            placeholder="---Select the linking page---">
+                            <option value>---Select the linking page---</option>
+                        </select>
+
+                    </p>
+                    </div>
+                    
+                    
+                    <div class="aside_right">
+                        <h1 class="right_title">ACCESS STATISTICS</h1> 
+                    <div class="access">
+                        <p>Total Access : 500</p> <br>
+                        <p>Online:3</p> <br>
+                    </div>
+                    </div>
+                    
+
+                </aside>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>2016-ABC BookStore. All rights reserved.</p>
+            <p>Website is developed for educational purposes in web programming.</p>
+            <p>Email: abcbookstore@gmail.com</p>
+        </footer>
+    </body>
+</html>

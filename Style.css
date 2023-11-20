@@ -1,0 +1,208 @@
+/* body_row_design */
+*{
+    margin:0px;
+    padding: 0px;
+    }
+    
+
+   
+      
+
+    /* body{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        background-color: white;
+        } */
+        article{
+            display: table-row-group;
+        }
+       
+        aside#left, aside#right, section{
+            display: table-cell;
+            vertical-align: top;
+            width: 100%;
+    
+            border-color: white;
+            }
+/* ABC_image_design */
+.headerimage{
+    float: left;
+    border: none;
+    vertical-align: top;
+
+}
+.headerlogo{
+    float: right;
+    padding-top: 130px;
+    padding-right: 30px;
+    font-weight: bold;
+    padding-left: 980px;
+}
+/* nav_design */
+.nav_line{
+    float: left;
+    width:100%;
+  
+    
+   content: normal;
+   font-weight: bold;
+  
+   border-bottom: 20px solid white;
+  
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+nav 
+li{  
+    float: left;
+    list-style-type: none;
+   
+   
+} 
+nav a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+nav label{
+    float: right;
+    padding-left :390px ;
+
+    
+}
+nav a {  display: block;  padding: 8px;  text-decoration: none; }
+/* left_design */
+.btn-group{
+    background-color: lightgreen;
+}
+.aside_left{
+    
+    
+    
+    float:left;
+    background-color: lightgray;
+    padding: 20px;
+    width: 300px;
+
+    
+   
+}
+.title{
+    background-color: blue;
+    padding-left: 30px;
+    color: white;
+    width: 300px;
+    
+    
+}
+aside a:hover{
+    color: black;
+}
+
+/* middle_design */
+.product-box{
+   
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    
+}
+.namebook{
+    text-decoration: none;
+    content: normal;
+    font-weight: bold;
+    color: blue;
+   font-size: large;
+   text-align: center;
+    
+   
+}
+.photo{
+  text-align: center;
+  padding-left:30px ;
+}
+.bill{
+    color: black;
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: large;
+}
+.price{
+    color: red;
+
+}
+.buttonbuy{
+    padding-left: 40px;
+}
+
+/* right_design */
+.right_title{
+    background-color: blue;
+    padding-left: 30px;
+    color: white;
+    padding-right: 80px;
+    
+}
+.aside_right{
+    width: 100%;
+    float: left;
+}
+.select{
+    background-color: lightgray;
+    text-align: center;
+    height: 50px;
+    padding-top: 30px;
+    border-bottom: 10px solid white;
+}
+.access{
+    background-color: lightblue;
+    color: red ;
+    font-weight: bold;
+    border-bottom: 10px solid white;
+    
+
+}
+
+
+.footer{
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+}
+
+.section{
+    width: 100%;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    table-layout: fixed;
+    background-color: lightblue;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-left: 100px solid white;
+    border-right: 100px solid white;
+}
+.loginname{
+   text-align: center;
+    
+
+}
+
+
+
+
+
+
+
